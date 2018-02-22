@@ -2,13 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
-import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { SidebarModule } from '../shared/sidebar/sidebar.module';
+import { NavbarModule } from '../shared/navbar/navbar.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    SidebarModule,
+    NavbarModule
   ],
-  declarations: [LayoutComponent, SidebarComponent]
+  declarations: [LayoutComponent]
 })
 export class LayoutModule { }

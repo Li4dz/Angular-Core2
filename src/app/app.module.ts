@@ -3,20 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
-import { HomeComponent } from './components/home/home.component';
-import { LayoutComponent } from './components/layout/layout.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ChartModule } from './components/chart/chart.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SidebarComponent,
-    HomeComponent,
-    LayoutComponent
+    AppComponent
+  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
