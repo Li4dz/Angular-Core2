@@ -3987,3 +3987,69 @@ Copyright (c) 2015 Daniel Eden
     display: none;
   }
 }
+
+.sidebar .sidebar-wrapper .nav [data-toggle="collapse"] ~ div > ul > li > a {
+  margin: 0;
+}
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+.sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal {
+  margin: 0;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate3d(0px, 0, 0);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+  opacity: 1;
+  white-space: nowrap;
+  display: block;
+}
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini,
+.sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini {
+  text-transform: uppercase;
+  float: left;
+  width: 30px;
+  text-align: center;
+  margin-right: 15px;
+  letter-spacing: 1px;
+}
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a i,
+.sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a i {
+  font-size: 17px;
+  line-height: 20px;
+  width: 26px;
+}
+
+.sidebar-mini .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  .sidebar-mini .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  .sidebar-mini .sidebar .sidebar-wrapper .user .info > a > span,
+  .sidebar-mini .sidebar .sidebar-wrapper > .nav li > a p {
+    -webkit-transform: translate3d(-25px, 0, 0);
+    -moz-transform: translate3d(-25px, 0, 0);
+    -o-transform: translate3d(-25px, 0, 0);
+    -ms-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    opacity: 0;
+  }
+
+  .sidebar-mini .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  .sidebar-mini .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  .sidebar-mini .sidebar:hover .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  .sidebar-mini .sidebar:hover .sidebar-wrapper .user .info > a > span {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+
+/* .sidebar .sidebar-wrapper .nav .caret {
+  margin-top: 12px;
+  margin-right: 50px;
+  position: absolute;
+  right: 1px;
+} */
