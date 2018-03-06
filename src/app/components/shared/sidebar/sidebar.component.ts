@@ -64,8 +64,8 @@ export class SidebarComponent implements OnInit {
     ]
 
     private sideBar : Array<Menu> = [];
-    
 
+    
   public menuItems: any[];
   ngOnInit() {
     // console.log(this.generateSidebar())   
