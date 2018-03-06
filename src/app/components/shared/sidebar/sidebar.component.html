@@ -36,54 +36,11 @@
             </a>
         </li>
         <li class="divider" *ngIf="isNotMobileMenu()"></li>
-        <li *ngFor="let menuItem of sideBar; let i = index"
-            routerLinkActive="active" >
-            <a [id]="'menu' + i" data-toggle="collapse" aria-expanded="false"
-                [attr.data-target]="'#' + menuItem.title">
-
-                <i class="{{menuItem.icon}}"></i>
+        <li *ngFor="let menuItem of sideBar" routerLinkActive="active" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i [class]="menuItem.icon"></i>
                 <p [innerHtml]="menuItem.title"></p>
             </a>
-            <ul [ngStyle]="{'margin-left.px': 20}" class="nav collapse" [id]="menuItem.title" role="menu" [attr.aria-labelledby]="'menu' + i">
-                <li routerLinkActive="active"><a>Link 2.1</a></li>
-                <li routerLinkActive="active"><a>Link 2.2</a></li>
-                <li routerLinkActive="active"><a>Link 2.3</a></li>
-            </ul>
-              <!-- <li>
-                  <a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">
-                      Link 2 (toggle)
-                   </a>
-                    <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
-                      <li><a href="#">Link 2.1</a></li>
-                      <li><a href="#">Link 2.2</a></li>
-                      <li><a href="#">Link 2.3</a></li>
-                    </ul>
-                  </li> -->
-
-            
-
-                  <!-- CREATIVE TIM -->
-                <!-- <div class="collapse" [id]="menuItem.title" aria-expanded="false">
-                    <ul class="nav">
-                        <li routerLinkActive="active">
-                            <a [routerLink]="[menuItem.path]">
-                                <span class="sidebar-normal">Over</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
-
-
-                <!-- <div class="collapse" [id]="menuItem.title" aria-expanded="false">
-                    <ul class="flex-column pl-2 nav">
-                        <li routerLinkActive="active" class="nav-item"><a class="nav-link py-0" href="">Orders</a></li>
-                        <li routerLinkActive="active" class="nav-item"><a class="nav-link py-0" href="">ASD</a></li>
-                    </ul>
-                </div> -->
-
-         
-            
-             
         </li>
     </ul>
   </div>
