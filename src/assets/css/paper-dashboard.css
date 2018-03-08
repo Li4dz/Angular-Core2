@@ -586,7 +586,7 @@ hr {
 
 .btn,
 .navbar .navbar-nav > li > a.btn {
-  border-radius: 20px;
+  border-radius: 4px;
   box-sizing: border-box;
   border-width: 2px;
   background-color: transparent;
@@ -2076,9 +2076,9 @@ Copyright (c) 2015 Daniel Eden
   background-color: #FFFFFF;
   color: #252422;
   margin-bottom: 20px;
-  position: relative;
   z-index: 1;
 }
+
 .card .image {
   width: 100%;
   overflow: hidden;
@@ -3987,3 +3987,15 @@ Copyright (c) 2015 Daniel Eden
     display: none;
   }
 }
+
+.m-top  {
+  margin-top: 26px;
+}
+
+.p-left-5 {
+  padding-left: 5px;
+}
+/* 
+.padding-zero {
+  padding: 0px;
+} */

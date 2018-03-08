@@ -10,7 +10,7 @@ select.selectpicker {
   display: none !important;
 }
 .bootstrap-select {
-  width: 220px \0;
+  width: 100% \0;
   /*IE9 and below*/
 }
 .bootstrap-select > .dropdown-toggle {
@@ -25,7 +25,7 @@ select.selectpicker {
   color: #999;
 }
 .bootstrap-select > select {
-  position: absolute !important;
+  position: relative ;
   bottom: 0;
   left: 50%;
   display: block !important;
@@ -50,7 +50,7 @@ select.selectpicker {
   width: auto !important;
 }
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: 220px;
+  width: 100%;
 }
 .bootstrap-select .dropdown-toggle:focus {
   outline: thin dotted #333333 !important;
