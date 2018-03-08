@@ -1111,7 +1111,7 @@ hr {
   border: 1px solid #CCC5B9;
 }
 .open .form-control {
-  border-bottom-color: transparent;
+  border-bottom-color: #CCC5B9;
 }
 
 .input-lg {
@@ -2042,7 +2042,7 @@ Copyright (c) 2015 Daniel Eden
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   background-color: #66615B;
-  color: rgba(255, 255, 255, 0.7);
+  color: #d1d0ce;
   opacity: 1;
   text-decoration: none;
 }
