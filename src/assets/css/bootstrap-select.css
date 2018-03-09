@@ -25,7 +25,7 @@ select.selectpicker {
   color: #999;
 }
 .bootstrap-select > select {
-  position: relative ;
+  position: relative;
   bottom: 0;
   left: 50%;
   display: block !important;
