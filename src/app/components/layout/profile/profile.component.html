@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card card-striped">
+              <div class="header">
+                  <h4 class="title">Critérios de búsqueda</h4>
+              </div>
+              <div class="content">
+                  <div class="row">
+                      <div class="col-md-3">
+                          <div class="form-group">
+                              <label>Nombre</label>
+                              <input type="text" class="form-control border-input md-6" name="" id="">
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                              <label>Correo</label>
+                              <input type="text" class="form-control border-input md-6" name="" id="">
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                       <div class="form-group m-zero-b">
+                          <label>Correo</label> 
+                          <!-- <select id="lunch" class="selectpicker" data-live-search="true" title="Seleccionar">
+                                  <option>Hot Dog, Fries and a Soda</option>
+                                  <option>Burger, Shake and a Smile</option>
+                                  <option>Sugar, Spice and all things nice</option>
+                                  <option>Baby Back Ribs</option>
+                                  <option>A really really long option</option>
+                          </select> -->
+                          <ng-select 
+                              [items]="items"
+                              [disabled]="disabled"
+                              (data)="refreshValue($event)"
+                              (selected)="selected($event)"
+                              (removed)="removed($event)"
+                              (typed)="typed($event)"
+                              placeholder="No city selected">
+                          </ng-select>
+                          </div> 
+                      </div>
+
+                      <div class="col-md-2"> 
+                          <div class="m-top">
+                              <button type="button" class="btn btn-primary btn-fill btn-block">Buscar</button> 
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-12">
+              <div class="card card-striped">
+                  <div class="header">
+                      <h4 class="title">Lista de Perfiles</h4>
+                      <p class="category"><a [routerLink]="['new']">Agregar Nuevo</a></p>
+                  </div>
+                  <div class="content table-responsive table-full-width">
+                      <table class="table table-plain">
+                          <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>Name</th>
+                                 <th>Age</th>
+                                 <th>Email</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                             <!-- <tr *ngFor="let k of users | keys; let i = index">
+                                 <td [innerHtml]="i + 1"></td>
+                                 <td [innerHtml]="users[k].name + ' ' + users[k].lastName"></td>
+                                 <td [innerHtml]="users[k].age"></td>
+                                 <td [innerHtml]="users[k].email"></td>
+                             </tr> -->
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+  </div>
+</div>

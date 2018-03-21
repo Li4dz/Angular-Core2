@@ -1,22 +1,16 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
-import { TestService } from '../../../services/shared/test.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styles: []
 })
-export class DashboardComponent implements OnInit, OnDestroy {
+export class DashboardComponent implements OnInit {
 
-  constructor(private testService: TestService) { }
-  
-  ngOnDestroy(){
-    console.log('dashboard destoy');
-  }
+  constructor() { }
 
   ngOnInit() {
-    console.log('dashboard Init');
     var dataSales = {
       labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
       series: [

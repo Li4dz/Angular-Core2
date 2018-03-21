@@ -19,7 +19,7 @@ import { ChartModule } from './components/chart/chart.module';
     HttpModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

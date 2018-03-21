@@ -24,7 +24,6 @@ export class NavbarService  {
     }
 
     sidebarToggle(){
-        console.log("aqui");
         var toggleButton = this.toggleButton;
         var body = document.getElementsByTagName('body')[0];
 
