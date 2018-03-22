@@ -7,7 +7,11 @@ import { UserService } from '../../../services/layout/user.service';
   templateUrl: './user.component.html',
   styles: []
 })
-export class UserComponent {
+export class UserComponent  {
+
+  constructor(private userService : UserService) {
+    this.showUserList();
+  }
 
   public items:Array<string> = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
   'Berlin', 'Birmingham', 'Bradford', 'Bremen', 'Brussels', 'Bucharest',
@@ -51,9 +55,7 @@ public refreshValue(value:any):void {
 
   private users : User [] = [];
 
-  constructor(private userService : UserService) {
-    this.showUserList();
-   }
+  
 
   showUserList(){
     this.userService.getUserList()

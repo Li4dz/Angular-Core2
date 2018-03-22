@@ -14,6 +14,7 @@ export class NavbarService  {
     }
 
     getTitle() {
+        console.log('navbar service');
         var path = window.location.pathname;
         for(var item = 0; item < this.listTitles.length; item++){
             if(this.listTitles[item].path === path){
