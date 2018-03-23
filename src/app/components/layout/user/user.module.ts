@@ -3,16 +3,17 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { UserService } from '../../../services/layout/user.service';
-import { KeysPipe } from '../../../common/pipes/keys.pipe';
 import { SelectModule } from 'ng2-select';
+import { PipesModule } from '../../../common/pipes/pipes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     UserRoutingModule,
-    SelectModule
+    SelectModule,
+    PipesModule
   ],
-  declarations: [ UserComponent, KeysPipe],
+  declarations: [ UserComponent],
   providers : [ UserService ]
 })
 export class UserModule { }

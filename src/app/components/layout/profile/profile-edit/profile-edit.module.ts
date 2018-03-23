@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { ProfileNewRoutingModule } from './profile-new-routing.module';
-import { ProfileNewComponent } from './profile-new.component';
+import { ProfileEditRoutingModule } from './profile-edit-routing.module';
+import { ProfileEditComponent } from './profile-edit.component';
 import { ProfileService } from '../../../../services/layout/profile.service';
 import { ProfileFormModule } from '../profile-form/profile-form.module';
 
@@ -12,10 +12,10 @@ import { ProfileFormModule } from '../profile-form/profile-form.module';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ProfileNewRoutingModule,
+    ProfileEditRoutingModule,
     ProfileFormModule
   ],
-  declarations: [ ProfileNewComponent ],
+  declarations: [ ProfileEditComponent ],
   providers : [ ProfileService ]
 })
-export class ProfileNewModule { }
+export class ProfileEditModule { }

@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { ProfileListComponent } from "./profile-list.component";
+import { ProfileEditComponent } from "./profile-edit.component";
 
 const routes : Routes = [
-    { path : '', component : ProfileListComponent }
+    { path : '', component : ProfileEditComponent }
 ];
 
 @NgModule({
@@ -11,4 +11,4 @@ const routes : Routes = [
     exports : [ RouterModule ]
 })
 
-export class ProfileListRoutingModule { }
+export class ProfileEditRoutingModule { }

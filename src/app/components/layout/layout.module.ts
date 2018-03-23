@@ -4,7 +4,6 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { SidebarModule } from '../shared/sidebar/sidebar.module';
 import { NavbarModule } from '../shared/navbar/navbar.module';
-import { KeysPipe } from '../../common/pipes/keys.pipe';
 
 @NgModule({
   imports: [
@@ -13,7 +12,7 @@ import { KeysPipe } from '../../common/pipes/keys.pipe';
     SidebarModule,
     NavbarModule
   ],
-  declarations: [LayoutComponent, KeysPipe],
+  declarations: [LayoutComponent],
   providers: [ ]
 })
 export class LayoutModule { }

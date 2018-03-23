@@ -22,22 +22,6 @@
                       <div class="col-md-3">
                        <div class="form-group m-zero-b">
                           <label>Correo</label> 
-                          <!-- <select id="lunch" class="selectpicker" data-live-search="true" title="Seleccionar">
-                                  <option>Hot Dog, Fries and a Soda</option>
-                                  <option>Burger, Shake and a Smile</option>
-                                  <option>Sugar, Spice and all things nice</option>
-                                  <option>Baby Back Ribs</option>
-                                  <option>A really really long option</option>
-                          </select> -->
-                          <ng-select 
-                              [items]="items"
-                              [disabled]="disabled"
-                              (data)="refreshValue($event)"
-                              (selected)="selected($event)"
-                              (removed)="removed($event)"
-                              (typed)="typed($event)"
-                              placeholder="No city selected">
-                          </ng-select>
                           </div> 
                       </div>
 
@@ -64,18 +48,29 @@
                           <thead>
                               <tr>
                                  <th>#</th>
-                                 <th>Name</th>
-                                 <th>Age</th>
-                                 <th>Email</th>
+                                 <th>Nombre</th>
+                                 <th>Descripción</th>
+                                 <th>Opciones</th>
                               </tr>
                           </thead>
                           <tbody>
-                             <!-- <tr *ngFor="let k of users | keys; let i = index">
-                                 <td [innerHtml]="i + 1"></td>
-                                 <td [innerHtml]="users[k].name + ' ' + users[k].lastName"></td>
-                                 <td [innerHtml]="users[k].age"></td>
-                                 <td [innerHtml]="users[k].email"></td>
-                             </tr> -->
+                              <tr *ngFor="let k of profiles | keys; let i = index">
+                                <td [innerHtml]="i + 1"></td>
+                                <td [innerHtml]="profiles[k].nombre"></td>
+                                <td [innerHtml]="profiles[k].descripcion"></td>
+                                <td>
+                                    <button [routerLink]="['edit', k]"
+                                        type="button" 
+                                        class="btn btn-info btn-fill">
+                                        <span class="ti-pencil-alt"></span>
+                                    </button>
+                                    <button (click)="deleteProfile(k)"
+                                        type="button" 
+                                        class="btn btn-danger btn-fill">
+                                        <span class="ti-trash"></span>
+                                    </button>
+                                </td>
+                              </tr>
                           </tbody>
                       </table>
                   </div>

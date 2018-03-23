@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ChartModule } from './components/chart/chart.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
